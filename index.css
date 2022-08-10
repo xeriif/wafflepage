@@ -1,0 +1,94 @@
+/* geral */
+h1, h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #1B1B1B;
+    font-weight: 700;
+}
+
+* {
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+} 
+
+body {
+    background: #EAEAEA;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+li {
+    font-size: 16px;
+    color: #39393A;
+}
+
+ul {
+    font-weight: 400;
+    list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: black; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+h1 {
+    font-size:  28px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+div img{
+    border-radius: 10px;
+    height: 300px;
+    width: 600px;
+    border: solid rgb(233, 225, 225);
+    justify-content: center;
+    object-fit: cover;
+}
+
+figcaption {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    color: #8F8F8F;
+}
+
+footer {
+    color: #8F8F8F;
+    font-size: 12px;
+}
+
+.ingredientes {
+    line-height: 26px;
+}
+
+/* Botão */
+.botao {
+  margin-top: 20px;
+  height: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.botao:hover {
+  transition: 1s;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: rgb(132, 14, 201);
+  color: white;
+}
